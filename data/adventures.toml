@@ -1,0 +1,685 @@
+# Based upon tables from the Dungeon Master's Design Kit by TSR, Inc.
+
+[[themes]]
+name = "Revenge"
+desc = "In this adventure, some villain has so offended one or more of the characters that he cannot be suffered to live. (Alternatively, the injured party could hire the characters to avenge his honor.) The villain must be found or otherwise gotten at, setting up the final duel or showdown between villain and characters."
+
+[[themes]]
+name = "Espionage"
+desc = "Espionage adventures are active, grim scenarios involving spying and perhaps other cloak-and-dagger deeds such as assassination or rescue."
+
+[[themes]]
+name = "Action/Adventure"
+desc = "This is the most common and straightforward sort of adventure there is. In the Action/Adventure scenario, you present your characters with a task and then confront them with obstacles to overcome in order to accomplish the task successfully."
+
+[[themes]]
+name = "Comedy"
+desc = "This adventure is fun for fun's sake. Its basic purpose is to provide humorous entertainment with a minimum of actual danger or tragedy."
+
+[[themes]]
+name = "Horror"
+desc = "This type of adventure is designed to scare both the characters and the players. Just having a monster attack is not enough for a horror theme; the monster must first frighten the characters."
+
+[[themes]]
+name = "Mystery"
+desc = "Here, the characters are presented with a mystery -- often a murder -- and have to find out who did what to whom."
+
+[[goals]]
+name = "Retrieve Item"
+desc = "This goal is like the Rescue, except the victim is an inanimate object. This item may be an artifact, a paper containing evidence against a character or patron, an antidote needed to save another NPC or player character, or just some item of sentimental value -- an item which one NPC hires the characters to steal from another NPC."
+
+[[goals]]
+name = "Clear Name"
+desc = "The name of one of the characters or an NPC has been sullied and the characters must clear it. The characters must find out a) why the name has been smeared, b) who is responsible, and c) why the responsible party is doing it; then they must find evidence to convince everyone they're telling the truth."
+
+[[goals]]
+name = "Gain Power"
+desc = "The heroes are on this adventure to gain personal or political power for themselves. They may be looking for an artifact or weapon or are performing a mission for someone who will reward them with political power (a higher social rank or lands, for instance). If the characters are doing someone else's bidding, you might want to roll again on this section to see what goal the patron will have assigned to the characters."
+
+[[goals]]
+name = "Rescue Someone"
+desc = "The characters must rescue one or more kidnapped people, probably from the stronghold of the kidnapper. Obviously, they must get to said stronghold, break in, rescue the kidnapped, break out, and escape back to safety; this usually requires careful and clever planning and a large dose of luck."
+
+[[goals]]
+name = "Escape"
+desc = "Early in the adventure, the heroes are captured. The remainder of the adventure consists of them learning enough so that they can escape. They have to get to know their fellow prisoners, learn the prison's routine, inventory their possessions, acquire other possessions they need, plan an escape, and execute it."
+
+[[goals]]
+name = "Thwart Monstrous Plan"
+desc = "This is a classic fantasy-adventure plot: The characters learn of some horrible plan made by a monstrous enemy and must thwart it before the kingdom is lost or the world is destroyed. This is an epic goal, and usually requires that the characters go to all sorts of places, rounding up allies and artifacts, before being strong enough to face their enemy."
+
+[[goals]]
+name = "Survive Environment"
+desc = "The characters could end up in a hostile environment which they must cross -- a desert, a jungle, or other hostile setting. During the adventure they'll need to find food and water, resist the elements, and perhaps fight off attacks of the natives."
+
+[[goals]]
+name = "Explore a New Area"
+desc = "The heroes are hired or convinced to enter an unmapped area and explore it. They may be making a map; they may be trying to find someone who disappeared into this area in the past; they may be following legends that tell of treasure in the unexplored interior."
+
+[[goals]]
+name = "Win War"
+desc = "In this adventure or set of adventures, the characters become part of an army -- a force assaulting another kingdom, perhaps, or an army defending one realm from another."
+
+[[goals]]
+name = "Gain Money"
+desc = "The heroes are intent on acquiring a fee or treasure. If it's a fee, you may wish to roll again on this pageto learn the patron's goal. If it's a treasure, pay attention to the Settings section, which will dictate where the treasure is, if not who owns it."
+
+[[goals]]
+name = "Protect Endangered NPC(s)"
+desc = "One or more NPCs are in danger, and the characters must protect them. They might be doing this for a reward, or because one or more of the NPCs is a friend or relative of the character. You need to decide what the characters are protecting the NPCs from. The NPC might be a wealthy or powerful person being sought by assassins or kidnappers. The NPC might be a whole village of peasants who are being terrorized by a bandit chieftain."
+
+[[story_hooks]]
+name = "Old Friend"
+desc = "Another classic story hook is the Old Friend, the childhood friend of our hero, who shows up in one of several ways to drag the hero into the story."
+
+[[story_hooks]]
+name = "Better Late than Never"
+desc = "Some bad guys have arrived and done some bad guy things. The PCs were none the wiser. The bad guys have now made good their escape, and the PCs have caught wind of it in time to chase them down before they make it back to their lair, their home nation, behind enemy lines, etc."
+
+[[story_hooks]]
+name = "Not in Kanas"
+desc = "The PCs are minding their own business and find themselves transported to a strange place. They must figure out where they are, why they are there, and how to escape."
+
+[[story_hooks]]
+name = "Hero Offended"
+desc = "Someone greatly offends the hero, so much so that he'll pursue his offender right into the adventure. (Note that this usually means that the offender is a minion of the Master Villain. You'll have to decide whether the minion offended the hero precisely to bring him into the adventure or just as a side-effect of his ordinary villain activities.)"
+
+[[story_hooks]]
+name = "Old Enemy"
+desc = "This is a straightforward story hook; the hero learns that his oldest enemy is back and is very active in the campaign, up to something. The hero will naturally want to investigate and will walk right into the story."
+
+[[story_hooks]]
+name = "Legend and Rumor"
+desc = "In this classic story hook, the hero stumbles across some new or long-forgotten knowledge that promises great treasure or gain."
+
+[[story_hooks]]
+name = "Grim Necessity"
+desc = "If the hero doesn't involve himself with this adventure, he's going to find himself suffering or dead --period. That's the hook to bring him into the adventure... but you have to determine why he'll suffer ordie if he doesn't become involved."
+
+[[story_hooks]]
+name = "Pressing Buttons"
+desc = "As a general story-hook approach, think about the player-character -- his personal goals and his personal dislikes. If the hero is pursuing a specific goal, you have one of the minor villains, as a side-effect of the villain's master plan, thwart the hero's latest step towards that goal. Alternatively, if there's something the hero truly hates to see, have it happen -- and have the villains be responsible."
+
+[[story_hooks]]
+name = "Mystery Woman"
+desc = "Create an NPC \"mystery woman\" sure to be fascinating to your hero and have her keep appearing inexplicably in his life. As he becomes interested and investigates her, he keeps stumbling across the villain's plans and becomes inextricably mired in the plot. (For female player-characters, the Mystery Man is just as useful.)"
+
+[[story_hooks]]
+name = "Missing Memories"
+desc = "One or more of the PCs wakes up with no memory of the recent past, and now they find themselves in some kind of trouble they don't understand. The PCs must find the reason for the memory lapse and solve any problems they uncover in the meantime."
+
+[[plots]]
+name = "Event"
+desc = "For this plot, choose some sort of event -- a tournament, a holiday, a celebration called by the king, a masked ball, or whatever -- and set the commencement of the Master Villain's plan against that backdrop."
+
+[[plots]]
+name = "A-B-C Quest"
+desc = "This is an epic sort of plot. In it, the heroes are given (or undertake) a task to perform: The taking of a city, the rescue of an innocent, the destruction of a monster, the creation of a magical item, the defeat of a Master Villain, etc. But the path to victory is not a simple one. To get to their goal, Event A, they find that they must first accomplish some other task -- Event B. But when they undertake the task of accomplishing Event B, they find that they must first accomplish Event C. This goes on for several encounters, until the heroes accomplish all the obstacle events which prevent them from returning to Event A, their original goal."
+
+[[plots]]
+name = "Accumulation of Elements"
+desc = "In this sort of plot, the heroes have to go from place to place -- perhaps covering very little area like a city, perhaps roaming the known world -- and accumulate elements to be used against the Master Villain. These elements may be clues, pieces of an artifact, evidence, or allies."
+
+[[plots]]
+name = "Geographic Progression"
+desc = "This is the simplest sort of adventure plot. The heroes have an area to investigate or travel through; they have encounters based on where they are. For instance, the traditional dungeon, where monsters are tied to specific rooms or areas. Or, if the heroes are travelling along a narrow valley or through an enchanted forest, they might suffer ambushes and other encounters fixed to various points along their travel plan. The plot, then, is getting to the villain by surviving the intervening obstacle encounters."
+
+[[plots]]
+name = "Series of Villains"
+desc = "This is a very dramatic plot, and very well-suited to oriental campaigns. In it, the heroes have undertaken a quest, usually the finding and defeat of the Master Villain. They may have to travel to his citadel or head off in another direction to find some artifact capable of defeating him, or run away from pursuing villains until they can figure out what's going on. All along their route, they are set upon by villains -- each villain has a name and distinct personality, and each encounter is life-or-death for the heroes and villains; the villain never escapes to safety if the tide turns against him, he fights unto death."
+
+[[climaxes]]
+name = "Chase to Ground"
+desc = "First, you have the Heroes Chasing the Villain. The villain, after a series of encounters with the heroes, is running to safety, to some place where he can acquire more power, or to somewhere he can accomplish some dread purpose such as assassination or mass murder. The heroes chase him, must deal with the obstacles he leaves behind, and finally catch up to him before or just as he reaches his goal. Here, we have the final duel between the villain’s forces and the heroes. Second, you have the Villain Chasing the Heroes. Often, in a story like this, the heroes have found out how to defeat the villain -- such as getting to a particular temple and conducting a particular ritual. The villain chases them all through their quest, catching up to them just as they're commencing their ritual; they must, with heroic effort, conclude the ritual while suffering his attacks. Third, you have the Master Villain's Sudden Escape Attempt. This takes place in adventures where the Master Villain's identity is unknown until the end. His identity is revealed, and he makes a sudden bolt for freedom; the heroes give chase. This usually results in a dangerous foot-chase through nasty terrain -- such as across rooftops, through the dungeons, or across an active battlefield."
+
+[[climaxes]]
+name = "Scattered Duels"
+desc = "In this climax, the heroes have gotten to the end of their quest -- they may have broken into, sneaked into, or escaped from imprisonment within the villain's citadel, or have marched into the little town where the villain is holed up -- and they become separated. You can separate them by having traps and tricks break the party apart, by having them see two or three things they must resolve (such as danger to innocents or the appearance of minion villains) pop up simultaneously; they'll have to run in all directions at the same time or suffer failure. Once the party is broken down into bite-sized chunks, you confront each individual or small group with the enemy or enemies he most deserves to face -- his personal enemy, the monster which defeated him before, etc. -- for a grand series of climactic duels."
+
+[[climaxes]]
+name = "Throne Room Duel"
+desc = "This is set up much like the Scattered Duels, except that you don't separate the heroes. It's harder to control whom fights who in this situation... but if it doesn't matter who has the final duel with the Master Villain, this is a classic climax choice."
+
+[[climaxes]]
+name = "Prevented Deed"
+desc = "Here, the heroes have been defeated -- captured by the Master Villain, or so thoroughly cut up by his minions that all believe them to be dead. And the heroes have learned, from the bragging of the villain, loose talk of his minions, or examination of clues, what is the crucial event of his master plan. In any case, the battered and bruised heroes must race to this site and have their final confrontation with the villain, bursting in on him and his minions just as the knife or final word or key is poised, and prevent the awful deed from taking place -- and, incidentally, defeat the master villain and minions who beat them previously."
+
+[[climaxes]]
+name = "Bloody Battle"
+desc = "This is the best Climax for an adventure involving the clash of mighty armies -- or for any adventure where, toward the end, the Master Villain and a large body of minions confront the heroes and their own troops. This finale is characterized by a monstrous clash between the two forces, with the heroes chewing through the enemy ranks to get at the Master Villain and his elite guards. It's strenuous, exciting, and classically simple."
+
+[[climaxes]]
+name = "Natural Disaster"
+desc = "Maybe the Master Villain has been tampering with the delicate forces of nature. He may, for instance, have been powering his master spell with the energies of a volcano. When the heroes attack the scene of his spellcasting, the spell goes out of control and so does the volcano. The villain is consumed in the eruption and the heroes must escape or be consumed themselves."
+
+[[general_settings]]
+name = "Torturous Terrain"
+desc = "The adventure takes place in some sort of unsettled, uncivilized, dangerous terrain; in action stories, the desert and jungle work best; choose one of those two or decide on a setting that is similarly dangerous and exotic."
+
+[[general_settings]]
+name = "Cosmopolitan City"
+desc = "Most of the story takes place in a large, sophisticated city; center the villain's plot and activities around that city. This setting is best suited to adventures involving more people than monsters; most of your villains should be human or demi-human."
+
+[[general_settings]]
+name = "Under the Sea"
+desc = "This sort of high-fantasy adventure takes place in and under (not on top of) the sea. The heroes require access to some sort of magic item or spell that allows them to breathe water for long stretches and might adventure in the uncharted depths or perhaps in a community of sea-breathers."
+
+[[general_settings]]
+name = "On the Sea"
+desc = "Most of the action occurs on the sea -- the heroes are shipborne for some reason, docking in lots of ports. Again, this is good for adventures where the heroes are investigating clues left all over the map, are part of some trading enterprise, or are being pursued by villains."
+
+[[general_settings]]
+name = "Exotic Distant Land"
+desc = "The adventure will take the heroes to some fascinating and exotic distant country, where they'll have to cope with new customs, monsters unfamiliar to them, and very colorful NPC encounters; choose one of the more fascinating foreign lands from your campaign world."
+
+[[general_settings]]
+name = "On the Road"
+desc = "Most of the adventure takes place on the road, as the heroes are travelling from place to place. This is especially good for adventures where heroes are investigating a wide-ranging mystery, are part of a caravan, or are being pursued by loathsome villains."
+
+[[general_settings]]
+name = "Under the Ground"
+desc = "In this variety of adventure, the heroes descend into vast cavern networks beneath the earth's crust. There, they can encounter bizarre races and primitive tribes, hitherto-unknown monsters and strange landscapes."
+
+[[general_settings]]
+name = "Hero's Home Town"
+desc = "The action takes the heroes back to the home territory of one of them. Note that this usually means that this hero's family or old friends are deeply involved in the adventure."
+
+[[specific_settings]]
+name = "Ruins"
+desc = "These can be the ruins of some ancient civilization, an abandoned temple or castle, incomprehensible blocks of stone arranged by ancient gods, etc. They can be magical or normal, inhabited by normal animals or by monsters, centers of magic or just tumbled-down buildings."
+
+[[specific_settings]]
+name = "Demi-human Community"
+desc = "In wilderness areas, this will be a large community of demi-humans -- elves, dwarves, halflings, whatever -- or intelligent nonhumans such as orcs. If your action is taking place in a city, this could be a hidden community (such as a secret underground dwarf community) or a section of the city inhabited mostly by demi-humans."
+
+[[specific_settings]]
+name = "Classic Dungeon"
+desc = "This would be the standard monster-filled labyrinth; perhaps it's a nesting ground for the master villain's monster troops."
+
+[[specific_settings]]
+name = "Mad Man’s Fortress"
+desc = "This is the citadel of a major enemy: Strong, unassailable, filled with soldiers and monsters, lined with secret passages and deathtraps; not a wholesome place for adventurers to spend their time."
+
+[[specific_settings]]
+name = "Palace of the King"
+desc = "The heroes could be here for many, many different reasons: Trying to get a favor from the ruler, part of some nobleman's retinue, members of the palace guard, sneaking in to save the ruler from assassins, sneaking in to assassinate the ruler, thrown into the dungeon for crimes they did or didn't commit, etc."
+
+[[specific_settings]]
+name = "Mansion of a Lord"
+desc = "This can be the home of a villain -- the characters may have to break in and rescue someone or steal evidence or break out if they've been captured -- or of a heroic ally, in which case it may be used as the headquarters for the heroes' plans and activities."
+
+[[specific_settings]]
+name = "Catacombs"
+desc = "These can be catacombs beneath a living city or a ruined one; they can be long-forgotten or still in use."
+
+[[specific_settings]]
+name = "Laboratory"
+desc = "This can be alchemical lab of a friendly wizard, or the horrible experimental chamber of the villain where new monsters are created and released upon the world."
+
+[[specific_settings]]
+name = "Legendary Forest"
+desc = "This classic adventure site is the sometimes dark and fearsome, sometimes light and cheerful, always magical and incomprehensible forest inhabited by the oldest elven tribes and most terrifying monsters."
+
+[[specific_settings]]
+name = "Caves of Magical Folk"
+desc = "These can be either beautiful, glittering homes of gorgeous magical peoples, or the dank and terrifying lairs of horrible monsters."
+
+[[specific_settings]]
+name = "Temple/Church"
+desc = "This can be either the church of some lofty and good deity, or the dark and grisly temple of some horrid deity (doubtless filled with evil soldiers and monsters), or even the temple that the madman villain has dedicated to himself for when he becomes a god."
+
+[[specific_settings]]
+name = "Shacktown of the Oppressed"
+desc = "Part of the action centers around the tenements or shacks of the worst part of town; perhaps an allied someone lives here, or the characters are fugitives hiding out in the nasty part of town."
+
+[[specific_settings]]
+name = "Lost City"
+desc = "This is the remnant of some lost civilization or expedition, still thriving in some forgotten corner of the world. Remnants of lost civilizations can even inhabit cavern systems beneath campaign cities, preying on the above-worlders for their goods, slaves, and sacrifices."
+
+[[specific_settings]]
+name = "Military Encampment"
+desc = "This is best used in an episode involving warfare; it could be the good-guy army's encampment, from which the heroes launch their adventures, or the villains' encampment, in which case the heroes might have to sneak in on a mission or escape from it if they're captured."
+
+[[master_villains]]
+name = "Agent Provocateur"
+desc = "This Master Villain is a clever spy who infiltrates an organization, order, or army, and tries to effect its destruction by getting it to perform actions which will cause others to oppose it directly. The identity of this Master Villain is usually a closely-guarded secret; the heroes will encounter his cover identity but will not suspect that he's responsible for all this chaos until they start adding up clues. Females in this role can be very, very effective."
+
+[[master_villains]]
+name = "Sufferer"
+desc = "This Master Villain disguises himself as some other sort of villain. Long ago, he was given an ugly curse -- he longs for death but can never die unless slain by heroes unaware of his curse. (Naturally, the way the curse works, he must defend himself when attacked by the heroes.) So, this villain works hard to make sure the best heroes in the world have sufficient cause to want to come and kill him. He'll insult them, ruin them, kidnap or murder their loved ones, whatever it takes to bring them against him. Often, he can only die -- his curse can only be undone -- in one specific holy place, so he'll have to lure the heroes to that place to face him. If the heroes are doing research on the villain all this time, they may find out his secret, leading to a sad and painful end to the episode as the un-killable villain has to leave and find someone new to kill him."
+
+[[master_villains]]
+name = "Advance Agent"
+desc = "This villain is the vanguard of some sort of invasion; often, he is trying to open up a portal to a dimension full of trapped evil stuff."
+
+[[master_villains]]
+name = "Avenger"
+desc = "This villain seeks to avenge some wrong he thinks he's suffered. He may be right; he may have suffered a wrong, and this makes him a little more sympathetic than villains who are purely evil. The Avenger uses his organization -- thugs and bribed officials -- to get at the one who wronged him and will want either to duel (singly) the one who wronged him, or to put the wrongdoer in a deathtrap."
+
+[[master_villains]]
+name = "Corruptor"
+desc = "The Corruptor is the villain who wants to make something nasty out of something that is currently nice. He may be working on a small scale -- i.e., wish to corrupt one character or a few characters, particularly PCs and their favorite someone. Alternatively, he may be a big-scale villain trying to change an entire city or nation into a jaded, debased pit of sin, hatred and death."
+
+[[master_villains]]
+name = "Conqueror"
+desc = "This character is moving his army in to take over; that's what he lives for. He's been the enemy of your characters' nation's ruler and has launched a full-scale invasion of your characters' favorite nation. The heroes have to beat their way through or elude his hordes of soldiers in order to get at him; better yet, they might lead their own nation's troops against his and outthink him in military fashion."
+
+[[master_villains]]
+name = "Destroyer"
+desc = "This villain is like the Corruptor, except that he likes destroying instead of corrupting. He operates like the Conqueror, moving in his armies -- often nonhuman or monstrous armies -- and destroying everything in sight."
+
+[[master_villains]]
+name = "God of Chance"
+desc = "Here you have two options. This Master Villain could be a real entity -- an actual being of mischief or silliness, who has intruded in the heroes' lives to cause chaos and have fun. Alternatively, this \"villain\" could be pure chance: The heroes are having a series of unrelated, accidental encounters which cause them fits. No real single villain is involved, although initially it looks as though there is."
+
+[[master_villains]]
+name = "Lovable Rogue"
+desc = "This Master Villain isn't really evil -- he's just chaotic and fun. Cheerful bandits in the forest who rob from the rich and give to the poor, singing and rope-swinging pirate kings, and romantic, sophisticated duelists all belong to the category of the Lovable Rogue. Often, the Rogue will not be behind the nastiness the heroes are encountering; he may be in competition with them for the prize they're seeking. Often the heroes and the Rogue (and his minions) will have to team up to succeed at their task. Just as often, the Rogue will try to get away with the whole treasure."
+
+[[master_villains]]
+name = "Ravager"
+desc = "This Master Villain is like the Destroyer, except that he terrorizes a very limited area -- such as a village, island, castle, or clan stronghold. (He may want to destroy the whole world but be trapped where he is; perhaps his efforts to free himself constitute the adventure's plot.) He stays in his area and terrorizes whatever comes into it."
+
+[[master_villains]]
+name = "Zealot"
+desc = "This villain is like the Conqueror, but he's not trying to conquer to own; he's trying to purge the world of something he feels is pure evil (another religion, a human, demi-human, or nonhuman race of sentient beings, a custom). He operates just like the Conqueror, enslaving or killing all those who belong to the \"wrong\" race or philosophy."
+
+[[minor_villains]]
+name = "Mistress with a Heart of Gold"
+desc = "This character is much like the \"Lover or Daughter of Villain\" type of Mystery Woman from the Story Hooks section. In this case, she usually accompanies the Master Villain, but sometimes goes on missions of her own, where she runs into and develops affection for one of the player-characters."
+
+[[minor_villains]]
+name = "Childhood Friend with a Dark Secret"
+desc = "This Minor Villain is like the character of the same name from the Allies and Neutrals section. However, the heroes find out early on that he's really working for the Master Villain. He may not wish to be helping the villains; his family may be held hostage, or he may just be too frightened of the villain or otherwise weak-willed to refuse. Alternatively, he could actually be evil now."
+
+[[minor_villains]]
+name = "Corrupted Hero"
+desc = "This villain was once a hero, possibly one known to the players. He was seduced by the dark side of the dungeon master. Because of his own weakness, or of a curse, he has become a villain, a pawn of the Master Villain."
+
+[[minor_villains]]
+name = "Inquisitor"
+desc = "This villain is the one who interrogates the heroes and NPCs captured by the villains. He accompanies the other Minor Villain out into the field and works on anyone captured; he enjoys inflicting pain and suffering."
+
+[[minor_villains]]
+name = "Lovable Rogue"
+desc = "This character is like the Master Villain of the same name, except that he has no minions of his own and serves at someone else's bidding. However, he's very independent, not always working in his employer's best interests; he often makes fun of the Master Villain's pretensions and may suffer that villain's retaliation because of it."
+
+[[minor_villains]]
+name = "Hard-Eyed Advisor"
+desc = "This is the sort of villain whom the heroes see in the Master Villain's throne room. He's hard-eyed and scary; life means nothing to him and he enjoys killing. He's also a good advisor to his master."
+
+[[minor_villains]]
+name = "Single-Minded Soldier"
+desc = "This most trustworthy of villain minions is the experienced, competent, persistent soldier -- a field-trained officer who serves the villain with military precision. He is usually encountered in the field as leader of the villain's field operations. He is not encountered directly until the middle of or the latter part of the adventure; until then, the heroes encounter only his subordinates."
+
+[[minor_villains]]
+name = "Misguided Moralist"
+desc = "This fellow has been convinced that only by helping the villain achieve the Master Plan can he improve the world. He tends to be encountered all through the adventure's plot, usually escaping from the heroes and taunting them for their wrong thinking. Fortunately, he's no more effective as a villain than he is as a thinker."
+
+[[minor_villains]]
+name = "Avenger"
+desc = "This character is much like the Master Villain of the same name, but he's not in charge of all this villainy, and he's definitely an enemy of one of the player-characters. You'll have to decide who he is and why he hates one of the heroes; he could be anything from a recurring villain to someone who simply lost a fight to the hero once."
+
+[[minor_villains]]
+name = "Chief Assassin"
+desc = "The Chief Assassin is the favorite killer of the Master Villain. The Assassin works mostly in the field, first killing witnesses who might prove harmful to his master, then zeroing in on the player-characters. He usually meets his end before the adventure's climax, but he may take one of the heroes down with him."
+
+[[minor_villains]]
+name = "Moronic Muscleman"
+desc = "This fellow is a huge, powerful monster of a fighter. His job is to smash anything the villain tells him to smash. He does that very well, but don't ask him to do any thinking; he has no time for such brainy stuff."
+
+[[minor_villains]]
+name = "Sniveling Vizier"
+desc = "The Vizier is a throne-room villain. Functionally, he's rather like the Hard-Eyed Advisor, offering tactics and advice to his master; but he's an oily, sleazy, cowardly sycophant. He's usually brilliant in his field of advice but has no combat abilities."
+
+[[allies_neutral]]
+name = "Absent-Minded Expert"
+desc = "The characters find they need an expert in some fields -- pottery, alchemy, whatever -- but all they can find is a somewhat daffy and absent-minded master of that subject. He's useful when around his subject matter, but otherwise absent-minded, incautions, in frequent need of rescuing, etc."
+
+[[allies_neutral]]
+name = "Merry Minstrel"
+desc = "This character follows the heroes in order that he might find inspiration for his song and storytelling. He can't be shut up; he sings all day long and into the night, is a showoff before crowds, and is far too noisy for a party trying to remain unobserved."
+
+[[allies_neutral]]
+name = "Ingénue in Distress"
+desc = "The heroes must protect some defenseless young innocent who is in danger from the villains. This person, perhaps the sheltered son or daughter of a nobleman or merchant, has no abilities at all but is sweet, charming, and in great need of help."
+
+[[allies_neutral]]
+name = "Government Observer"
+desc = "For some reason, the heroes' ruler wants one of his own people accompanying them. Whatever the reason, the heroes are now stuck with a haughty, self-important royal observer, an expert in (probably) military tactics or espionage. He continually offers unwanted advice and tends to get the heroes into trouble by pulling rank whenever he's not satisfied."
+
+[[allies_neutral]]
+name = "Villain Ally"
+desc = "For some reason, the heroes find themselves in the company of a villain. Perhaps he's a minion of this adventure's master villain; he may be guiding the heroes to wherever they must leave a ransom, or, if the master villain is forcing the heroes to perform some mission, this villain ally is along to make sure they do it right. Whatever the reason, he's competent, unpredictable, and out for himself."
+
+[[allies_neutral]]
+name = "Grumpy Old Professional"
+desc = "Again, the heroes need an expert in a certain field -- this time a craft or art, such as blacksmithing, engineering, horse-training, or whatever. The only or best professional they can find is an aged expert. He's grumpy, cranky, and sharp-tongued; he constantly complains about the food, the weather, his companions, the decline in skill of his co-workers since he was a young man, the road conditions, the rotten pay he's receiving, and so on."
+
+[[allies_neutral]]
+name = "Romantic Loony"
+desc = "Somewhere, the heroes bump into a lunatic who falls immediately in love with a player-character and won't leave him or her alone. This character may be a love-smitten village lass or nebbish adventurer. Whatever the origin, this character must be hopelessly in love with the character but have some trait which keeps the character from reciprocating; perhaps the loony is too plain, too crazed, or too stupid. Whatever, he or she really is sincere in his affection for the character."
+
+[[allies_neutral]]
+name = "Tragic Fellow Hero"
+desc = "The heroes are in the company of some hero well-known to them; he may have been a companion or ally, or they may just know him by reputation. He is a tragic figure; he may have lost his family to the master villain, or lost his properties and titles, or be afflicted with a curse he cannot be rid of or be committed to a quest he knows will take his life. He's dour, and gloomy, prophesying doom and having no fun at all."
+
+[[allies_neutral]]
+name = "Congenial Madman"
+desc = "This fellow is a pleasant, happy lunatic whom the heroes encounter; after the initial encounter, he follows them wherever they go, commenting on their plans, behaving strangely, getting underfoot, and -- very occasionally -- proving to be a real help."
+
+[[allies_neutral]]
+name = "Gibbering Madman"
+desc = "Some poor wretch blundered into part of the master villain's plan and saw too much. What he saw drove him crazy. He gibbers and jabbers, occasionally uttering clues about what he's seen, but just isn't coherent. He knows enough that the heroes will need to take him along to comment on what they're encountering, though, so he can't just be met and forgotten."
+
+[[allies_neutral]]
+name = "Hero Worshipper"
+desc = "Some youth -- an urchin, a brother or sister of one of the heroes, or a child run away from home -- hooks up with the heroes, following them wherever they go, being admiring, talking to everyone (neutrals and villains included) about how wonderful and powerful the heroes are."
+
+[[allies_neutral]]
+name = "Arrogant Snob"
+desc = "For some reason, the heroes have to accompany or escort an arrogant nobleman or craftsmaster. They can't afford to abandon or kill this person; he or she may be their employer, an expert on the place they're going to, one of their relatives, or a relative of the royal family. And this person makes their life hell with sniping comments, haughtiness, and other unbearable traits."
+
+[[monster_encounters]]
+name = "Foreshadowing Monster"
+desc = "With this monster encounter, combat may not be necessary. This monster encounter exists to alert the characters to the fact that something unusual is going on, a foreshadowing of their upcoming conflicts with the Master Villain."
+
+[[monster_encounters]]
+name = "Stampede"
+desc = "Should the heroes ever cross plains or prairies, their villainous enemies may wish to stampede a herd of large animals at them. Alternatively, beasts in the forest may be stampeded by fires set by the villains; in this case, it will not be one sort of animal charging through, but a mixture of terrified forest animals, from the smallest fox-cub to the largest bear."
+
+[[monster_encounters]]
+name = "Nocturnal Predator"
+desc = "This is a classic monster encounter; the arrival of a hungry carnivore in the middle of the night. Usually, this attack happens to heroes camping between villages or out in the deep wilderness; a wild animal, attracted by food odors (from the heroes' campfire or from the heroes themselves) sneaks in for a bite."
+
+[[monster_encounters]]
+name = "Assassin Monster"
+desc = "This monster, at some time in the adventure, is sent by the Master Villain to attack one or more heroes when they're at their most vulnerable -- asleep, enjoying themselves, etc. Usually, the Assassin Monster attacks, but the hero, though injured, can hold it off long enough for his friends to respond to his shouts. The Assassin Monster is usually killed by his friends, who can then speculate on who sent it and why."
+
+[[monster_encounters]]
+name = "King Beast"
+desc = "At some point in their adventure, the heroes run across a King Beast -- some enormous, intelligent monster (which speaks the Common tongue) which is the leader of its species. Perhaps it needs help; if the heroes help it they'll earn themselves a favor which the King Beast will repay at some later time in the adventure. Perhaps the heroes are in deadly danger and need help; the King Beast can be persuaded to help, but only in return for a deed or favor in the future."
+
+[[monster_encounters]]
+name = "Ravager"
+desc = "This is another classic monster encounter; the monster which is bedeviling a community or local area and will continue to do so unless the heroes destroy or defeat it. Yes, this is like the Master Villain of the same name, but the Ravager usually has no master plan -- it just wants to kill, destroy, or eat."
+
+[[monster_encounters]]
+name = "Reconnaissance Monster"
+desc = "At some point in the adventure, the Master Villain will become aware of the heroes' activities against him. If he has magical abilities or a magical servant, he will send some sort of quiet, clever monster to spy on the heroes. The heroes should have an opportunity to realize they're being spied upon, leading them to a mad scramble as they try to capture or destroy the spy."
+
+[[monster_encounters]]
+name = "Terrain Monster"
+desc = "Don't forget the simple run-in with the animal belonging to the terrain where the heroes are: Every type of wilderness has its predators and big, nasty herbivores."
+
+[[monster_encounters]]
+name = "Beast Amok"
+desc = "Some time when the heroes are in a village or city, an animal, probably an otherwise tame or captured beast, is set loose by the villain's minions or driven mad by the Master Villain. The beast goes berserk in the crowds; if the heroes aren't inclined to capture or kill it, it goes after them."
+
+[[monster_encounters]]
+name = "Powerful Tester"
+desc = "Here, some powerful, intelligent monster with shape changing ability turns into a human form. When the heroes encounter him, he needs help or having trouble. He also obviously can't reward the heroes for their help and will only serve to slow the heroes down from their quest. If the heroes help him anyway, the Powerful Tester reveals himself in his true form and offers to aid the heroes in their quest."
+
+[[monster_encounters]]
+name = "Loving Deceiver"
+desc = "One of the player-characters, specifically one of the better-looking ones, attracts the attentions of a very attractive local of the opposite gender. This local person, encountered in unthreatening surroundings, invites the hero off to a liaison away from his friends and other people. Of course, this person is a human-appearing monster of some sort; once alone with the character, he/she will attack the character with monstrous intent."
+
+[[monster_encounters]]
+name = "Noble Beast"
+desc = "With this encounter, the heroes find that they have to capture -- but not injure -- some sort of powerful, noble beast to accomplish their mission. For instance, to reach a mountain-top aerie, they must capture pegasi and ride them up to their enemy."
+
+[[character_encounters]]
+name = "New Enemy"
+desc = "In the course of his ordinary activities, one of the heroes can make a New Enemy. Hurrying along the street, he can bump into a disagreeable fighter for whom an apology isn't enough; in a tavern, he can make some innocuous remark that you deliberately have the irritable fellow misconstrue as an insult. The New Enemy will only exchange heated words with the hero at this point but will appear again later in the adventure and will eventually have to fight the hero."
+
+[[character_encounters]]
+name = "Bureaucrat"
+desc = "Some time in their adventure, the heroes must deal with the local government and run into that most horrible of nuisance monsters, the bureaucrat and his red-tape dispenser. The heroes don't have the right forms. When they have the right forms, they forgot to fill them out in triplicate. And so on."
+
+[[character_encounters]]
+name = "Mean Drunk"
+desc = "The Mean Drunk works much like the Belligerent Soldier except that he's not as tough, is of course drunk, and is usually accompanied by other Mean Drunks."
+
+[[character_encounters]]
+name = "Belligerent Soldier"
+desc = "The belligerent one has just had his ears pinned back by his commanding officer and is anxious to take it out on some hapless civilian. If this is a city gate, he claims that the hero's papers are wrong or that he recognizes the hero from descriptions of a wanted criminal; if this is the streets, he insults the hero's lack of military bearing, pretty looks, clothes, smell, companion, or whatever it takes to provoke a reaction."
+
+[[character_encounters]]
+name = "Thief"
+desc = "At some point in their adventure, the heroes have a run-in with thieves."
+
+[[character_encounters]]
+name = "Blackmailer"
+desc = "If the party is pulling a scam, this person knows it and can tell the potential victim; if they're wanted by the authorities, he's willing to alert the authorities that they're here; if they're hiding out from the Master Villain, he's going to tell said villain that they're here; he may have kidnapped one of their favorite someone and be holding him for ransom; and so on."
+
+[[character_encounters]]
+name = "Old Friend at the Wrong Time"
+desc = "One of the characters' old friends recognize him and loudly renews their acquaintance in full view of the guards looking for the characters. This usually leads to an exciting chase as the heroes must escape."
+
+[[character_encounters]]
+name = "Inquisitive Official"
+desc = "Some local authority has noticed the characters' presence and it makes her curious. She snoops around asking questions all the time. She may be a city guardsman or special agent of the ruler, but (functionally) she's a police lieutenant, asking the wrong questions at the wrong time; the heroes have to work around her, sneaking where normally they'd be able to work in the open."
+
+[[character_encounters]]
+name = "Seducer"
+desc = "One of the characters is invited to a romantic liaison with an attractive local. This local can just be interested in a brief tryst, could fall madly in love with the hero and follow the hero through the rest of the adventure, could be a Loving Deceiver monster encounter, could be a thief and rob the hero blind, or could be a spy or assassin working for the Master Villain."
+
+[[character_encounters]]
+name = "Truthful Accuser"
+desc = "This encounter is like the Lying Accuser except that the accuser is telling the truth. Dig through your characters' pasts, uncover a misdeed or two, and, when the heroes are at a critical point in their adventure, confront them with someone they have wronged. This person has found them and appealed to sympathetic local authorities. The heroes will have to make good or have the authorities on their backs for some time to come."
+
+[[character_encounters]]
+name = "Press Gang"
+desc = "In any port city, the heroes, in a tavern or hostel, may find themselves set upon by ruffians employed by the city; these ruffians use clubs and strike to subdue. If the heroes fight and beat the ruffians, they find themselves wanted by the law for assaulting officers of the peace. And if they fight and lose, they wake up to find themselves sailors, headed far away from their quest! Now they must decide whether they're going to jump ship, mutiny, or just settle down to a few years of seafaring life."
+
+[[character_encounters]]
+name = "Lying Accuser"
+desc = "A captured thief may accuse the character of putting him up to the theft; an abandoned mother may accuse the hero of fathering the child; a reputable witness (working for the Master Villain) may accuse the hero of a murder or robbery. The hero shouldn't know what he's accused of until he's hauled in by the authorities."
+
+[[character_encounters]]
+name = "Inquisitive Chronicler"
+desc = "This character is a historian who wishes to accompany the heroes to record their exploits. He constantly pries into the heroes' backgrounds, asking questions that are none of his business, as the adventure continues."
+
+[[character_encounters]]
+name = "Bandit Gang"
+desc = "When the heroes are enroute from one place to another, have them run across one of the local bandit gangs. The bandits are faster and far more numerous than the heroes. But the bandits stay back. Basically, they're bandits who admire courage and prowess, and the bandit leader will challenge one orall of the heroes to a test of bravery or ability -- such as a horserace, a duel, a wrestling match, a joust, an arm-wrestling match where scorpions sting the loser, etc."
+
+[[death_traps]]
+name = "Demolition Zone"
+desc = "In this classic deathtrap, the heroes are placed (usually bound and weaponless) in some building or area just as it's due to be destroyed."
+
+[[death_traps]]
+name = "Animal Pit"
+desc = "This is a classic trap of the adventure genre: The heroes (perhaps just one hero) are dropped into a pit filled with dangerous animals -- snakes, lions, bears, whatever. They must either fight the beasts or delay them until they can escape -- climb back out, open a secret door, break down a wall, have a rope lowered by friends above, etc."
+
+[[death_traps]]
+name = "Rock and a Hard Place"
+desc = "This trap starts out as an Animal Pit, Pit and the Pendulum, or Tomb Deathtrap, but an obvious escape suggests itself very early on. Trouble is, it leads into even worse danger. The hole out of the animal pit may lead to the lair of an even worse animal; it may lead through a succession of dangers (collapsing old catacombs, into an underground river, into a den of zombies) before the heroes reach the light."
+
+[[death_traps]]
+name = "Coliseum"
+desc = "If it's appropriate, you can have the heroes captured by the local authorities -- particularly when they're in an exotic land, lost world, or whatever -- and have them armed with gladiatorial gear and dropped into a coliseum for the entertainment of the locals. (Note that this works much better with fighting-type heroes than spellcasters.)"
+
+[[death_traps]]
+name = "Pit and the Pendulum"
+desc = "Actually, we're applying this term to any of many time-delay deathtraps. In this sort of trap, the villains capture the heroes and place them in a trap which will soon kill them -- it operates on a delay, often based on a timing device or a burning fuse."
+
+[[death_traps]]
+name = "Mutually Assured Destruction"
+desc = "In this very nasty deathtrap, the heroes are bound up in such a manner that any one of them may get free of his bonds -- but when he does, all his friends perish. Obviously, the heroes' task is to find some way for everyone to get out alive. Perhaps an intricate series of cooperative rope-cutting will defuse the trap; perhaps a coordinated maneuver will get everyone free as the trap is being sprung."
+
+[[death_traps]]
+name = "Framed"
+desc = "One or more of the heroes is accused and convicted of a capital crime -- one for which the mandatory punishment is death. The heroes must escape or die, and they're escaping from the well-built, well-protected prison of the local authorities."
+
+[[death_traps]]
+name = "Avalanche"
+desc = "This is an outdoors trap. Some time when the heroes are in a narrow canyon or gorge, or are on a snow-covered mountain, their enemies can arrange to dump an avalanche upon them (rocks and boulders in the first instance, snow in the second)."
+
+[[chases]]
+name = "Aerial"
+desc = "The heroes could be riding pegasi or friendly griffons or allied great eagles; the villains could be carried aloft by gargoyles or demons. The prospect of taking a mile-long fall if one's mount is hit is a very daunting and challenging one for the hero."
+
+[[chases]]
+name = "Special Terrain"
+desc = "You can make any chase more memorable by having it take place in a setting to which it is utterly unsuited. For instance, horse chases are fine and dramatic when they take place through the forest, out in the open plains, or along a road -- but they become diabolical when they take place inside the Royal Palace or in dangerous, labyrinthine, treacherous catacombs."
+
+[[chases]]
+name = "Endurance"
+desc = "The Endurance Chase is not some sort of climactic chase -- it's a rugged, tiring, persistent pursuit that tests the characters to their limits. In this chase, the heroes and villains are pursuing one another across a lot of territory and they're not catching up with one another very fast. This may be a horseback pursuit across a hundred miles of savannah, a camel chase across several days' worth of desert, or a chase across arctic tundra."
+
+[[chases]]
+name = "Horseback"
+desc = "This is a relatively short chase -- it only needs to go on for a mile or so before even the best horses are winded. If it goes on longer than that, the horses may collapse and perhaps die."
+
+[[chases]]
+name = "Water"
+desc = "Don't forget the water chase: Whether it's a battle of seamanship between naval vessels, a chase of rafts toward the inevitable waterfall ahead, a contest of canoeing ability, or a chase between the villain and his giant shark vs. the heroes and their dolphin friends, the water chase can be a distinctive and dramatic one."
+
+[[chases]]
+name = "Footrace"
+desc = "The chase involves the characters on foot, probably through such terrain as city streets or the corridors of a palace. One hero may realize that he’s being pursued by a party of enemies and choose to run forit; the heroes may have caught up to the Master Villain, prompting him to run for his life."
+
+[[omens_prophecies]]
+name = "Fortune Teller Predicts Doom"
+desc = "This is an ominous encounter: A fortune-teller predicts doom for one of the heroes, or for some community menaced by the Master Villain. Shortly after, some calamity should befall the hero: He can be attacked by an assassin, be in a building when it is struck by fire or an earthquake or suffer other danger. Investigation of the events can then point the heroes toward the Master Villain as the event's instigator."
+
+[[omens_prophecies]]
+name = "Comet's Progress"
+desc = "Events during the adventure may be enlivened by a large and menacing comet which appears in the night sky for several days during the scenario; the locals take it for an omen of doom. The comet may be the result of magic being used by the Master Villain, or the comet's appearance can pertain to an old legend involving the Master Villain."
+
+[[omens_prophecies]]
+name = "Innocent Fulfills Prophecy"
+desc = "An innocent could fulfill a prophecy -- one which endangers his/her life. This innocent might, for instance, be the one who is supposed to slay the king but is not a mighty adventurer able to protect himself from the king; the heroes may find themselves sheltering and helping this poor dupe."
+
+[[omens_prophecies]]
+name = "Totem Animal"
+desc = "If a hero has an animal which is his totem, he may see the animal engaged in a fight to the death with another animal -- one which, coincidentally, is the totem of one of the villains. How his totem defeats the other -- or is defeated by it -- gives the hero some clues as how to fight his actual opponent when the time comes."
+
+[[omens_prophecies]]
+name = "Hero Fulfills Prophecy"
+desc = "This is the most useful sort of prophecy. In the early part of the adventure, one of the heroes discovers that he fulfills some ancient prophecy."
+
+[[omens_prophecies]]
+name = "Birthmark"
+desc = "One of the heroes has a birthmark that pertains to the adventure in some way. He may have a birthmark identical to some NPC -- for instance, some person endangered by the Master Villain. This mystery can give the hero his reason to become involved. Alternatively, his birthmark may mark him as a hero fulfilling some ancient prophecy."
+
+[[omens_prophecies]]
+name = "Reincarnation"
+desc = "The hero, seeing the portrait of some long-dead nobleman, may be surprised to see his own face staring back at him. All evidence points to the fact that our hero is the reincarnation of this person, and the Master Villain may desire to destroy any trace of that nobleman's existence. Just as appropriately, this long-dead nobleman may have died after making some important choice -- such as choosing to love over career or career over friends; and the choice he faced is identical to the one the hero now faces. Will our hero defy the prophecy and choose as he did in a previous life, or will he choose the other option and see what happens?"
+
+[[secret_weaknesses]]
+name = "Holy Symbol"
+desc = "The villain may have the traditional weakness to a specific holy symbol -- but don't choose just an ordinary one. It may be a holy symbol no longer used by the church or may be some forgotten variation of the current symbol. (For instance, the cross may not work, but a variation -- such as the Roman cross -- might; alternatively, it might have to be a holy symbol which has undergone some unfamiliar ritual.)"
+
+[[secret_weaknesses]]
+name = "Element"
+desc = "The Master Villain can be banished, dispelled, killed, or otherwise defeated by some of element or item. The Master Villain tries to get rid of all the examples of this element in his vicinity; he doesn't let his minions carry it or bring it into his presence. But he's not stupid; he doesn't announce to the world what his weakness is. He tries to hide his concern within another command. If he's allergic to red roses, for instance, he orders all \"things of beauty\" destroyed within miles of his abode."
+
+[[secret_weaknesses]]
+name = "Lack of Familiarity"
+desc = "The Master Villain, if he comes from the past or another dimension, or belongs to an alien race, might be sufficiently unfamiliar with this world that he essentially defeats himself. How? By making incorrect guesses about human behavior. One classic error involves underestimating the human capacity for self-sacrifice."
+
+[[secret_weaknesses]]
+name = "Love"
+desc = "The Master Villain possesses the \"weakness\" of genuine affection or love -- probably for some person, though it could be very intriguing if the object of his affections is a player-character. The heroes can then defeat the villain by holding his loved one hostage or proving that his loved one will be seriously harmed, betrayed, or killed if the villain keeps up with his activity."
+
+[[secret_weaknesses]]
+name = "Secret Embarrassment"
+desc = "Finally, the villain may have some aberration or secret shame that will force him to flee when he is confronted with it. It could be something as simple as the fact that his nose is too big, or that he is a small and nebbish wizard pretending to be some vast, powerful demonic power. When his shame is revealed, he is too humiliated to continue; this is a good option for comedy adventures."
+
+[[special_conditions]]
+name = "Stolen Identities"
+desc = "This option requires that the Master Villain be of godlike power or possess some sort of artifact. Once the Master Villain realizes that the heroes are on his tail, he uses his powers or artifact and steals the heroes' identities. One day they wake up -- and no one knows who they are. They retain their memories of themselves and each other, but no one else does. (The villain knows them, though.)"
+
+[[special_conditions]]
+name = "No Weapons Allowed"
+desc = "At some point in the story, the heroes must surrender their weapons. Perhaps they're visiting some quarter of the city where weapons are not allowed; or a particularly peace-loving temple. In any case, once they're there, they are attacked by enemies belonging to the Master Villain."
+
+[[special_conditions]]
+name = "Time Limit"
+desc = "Finally, the most obvious condition to place on an adventure is to give it a time limit. If the Master Villain is going to conclude his evil spell in only three days, and his citadel is three hard days' riding away, then the heroes are going to be on the go all throughout the adventure -- with little time to rest, plan, gather allies, or anything except get to where they're going."
+
+[[special_conditions]]
+name = "No Hurting the Villain"
+desc = "For some reason, the heroes cannot afford to fight the villain directly. For instance, what if a demon possesses the body of the child of one of the characters, or a very important child spoken of in prophecy, one without whom the world will perish?"
+
+[[special_conditions]]
+name = "Coping with a Curse"
+desc = "The curse might be draining out a hero’s life-force (he's losing experience which will be returned if he succeeds) or might be making him progressively insane. Each day, as he sees his reflection in a mirror or pond or fountain, he'll know himself to be less than he used to be."
+
+[[special_conditions]]
+name = "No Lawbreaking"
+desc = "For some reason, at one point in the story, the heroes cannot allow themselves to break the law -- even when it would help them greatly to do so. For instance, the heroes may be asking for the help of a king whose word is law and whose power is immense. When they arrive for their audience, an emissary of the Master Villain is making a similar plea for help. If the heroes attack and kill that emissary, they will lose any chance at the king's help -- in fact, he may order their execution."
+
+[[special_conditions]]
+name = "Omnipresent Observer"
+desc = "If a wizard, demigod or god has forced the heroes to undertake this quest, he may be with them continually -- in spirit. He can't help them but does magically watch everything they do. And when they do something he doesn't like, he tells them about it -- loudly and nastily. (This is distressing when they're trying to break into a fortress or sneak through enemy lines.)"
+
+[[special_conditions]]
+name = "Magic Doesn't Work Right"
+desc = "If the adventure is taking place on an alternate plane, then that plane's magic works oddly or not at all. (A spellcaster will find that just making himself useful is a challenge when none of his spells works.)"
+
+[[moral_quandaries]]
+name = "Honor Quandary"
+desc = "You want to use this on the character with the most strongly developed sense of personal honor -- someone who has lived all his life by a strict code. Toward the end of the adventure, this character realizes that the best way to defeat the Master Villain is a violation of that code. For instance, the character might be a paladin, who discovers that the only possible way for the heroes to defeat the Master Villain is to sneak up on him and stab him in the back."
+
+[[moral_quandaries]]
+name = "Ally Quandary"
+desc = "You set up the situation so that the heroes have a good chance at defeating the Master Villain if they get the aid of two specific individuals, probably experts in fields relating to the villains' activities. But the two experts hate one another and refuse to work together, even if it costs them their world."
+
+[[moral_quandaries]]
+name = "Saving Quandary"
+desc = "Finally, another classic quandary puts the heroes in the position of choosing between a grand opportunity to hurt the Master Villain -- or saving the lives of a number of individuals."
+
+[[moral_quandaries]]
+name = "Friend Quandary"
+desc = "At a critical point in the story, one of the campaign's NPCs makes an impossible demand of one of the heroes."
+
+[[moral_quandaries]]
+name = "Respect Quandary"
+desc = "This is much like the Ally Quandary, only at a greater distance. The heroes have been utilizing the aid of two (or more) powerful NPC allies. Now, during the adventure, the heroes come across a task which can be accomplished in one of two ways -- say, through military intervention or by esoteric magic. The problem is, the NPC allies are arguing for different choices, and the one whom the heroes choose against will no longer aid them."
+
+[[red_herrings]]
+name = "Lying Rumor"
+desc = "This is the worst and most useful type of red herring -- the interesting rumor which just happens to be false. In adventures of this sort, the best Lying Rumor concerns the Master Villain; it gives the heroes some \"important\" information about him which later turns out to be useless."
+
+[[red_herrings]]
+name = "Extraneous Details"
+desc = "When giving the heroes details on their enemy -- for instance, details they are learning from investigations and readings -- you can give them just a few details too many. This may prompt the heroes to investigate the \"extra\" (i.e., irrelevant) details in addition to the relevant ones, thus losing them valuable time."
+
+[[red_herrings]]
+name = "Artifact that Doesn't Work"
+desc = "Often, epic quests against powerful Master Villains require that the heroes find some legendary artifact, the only object which can defeat the villain. If your heroes have had no trouble getting to the artifact -- they've effortlessly sliced through every obstacle you've put in their path and are confidently advancing on the resting place of the magical item -- you can have it not work."
+
+[[red_herrings]]
+name = "Loony who Has It Wrong"
+desc = "You can have the heroes \"aided\" by a so-called expert who is actually a lunatic who doesn't know anything about what he's talking about. Once he's led the heroes off to some remote part of the continent, his evasive answers and bizarre behavior will alert them that he really doesn't know anything about what he's pretended to be an expert on."
+
+[[red_herrings]]
+name = "False Path to the Artifact"
+desc = "Once again, if the heroes have had too easy a time finding the artifact capable of destroying the villain, give them trouble this way: When they get to the place where the artifact is supposed to be contained, they find the coffer or chamber or whatever empty, obviously looted by robbers, who have scrawled such remarks as \"Kelrog was here!\" upon the walls."
+
+[[cruel_tricks]]
+name = "Heroes Must Work with Villain"
+desc = "If they have to work for the villain, it's due to some hold he has over them -- probably, he's kidnapped one of their NPCs and will kill this person if his demands aren't met. Put the heroes through the encounter where they have to do something they are loathe to do, such as sack and pillage a temple, before they have the opportunity to retrieve their friend."
+
+[[cruel_tricks]]
+name = "Someone Turns Traitor"
+desc = "He may alert the enemy when the heroes are planning a raid; he may steal the artifact and take it to the villain; he may stab a hero or important NPC in the back (literally) before departing."
+
+[[cruel_tricks]]
+name = "Villain is Related to Hero"
+desc = "In this very irritating complication, one of the heroes discovers that the Master Villain is related to him. The villain might be his long-lost father or twin; perhaps this relative is not long-lost after all, but has secretly been a Master Villain for years, and only now has the hero discovered it."
+
+[[cruel_tricks]]
+name = "Wanted by the Law"
+desc = "One final complication, one which occurs pretty frequently, is when the heroes are wanted by the law. When they're wanted by the law, they have to travel in secret and very limited in the resources they can acquire."
+
+[[cruel_tricks]]
+name = "Mission is a Ruse"
+desc = "In the course of their adventuring, the heroes discover they have been tricked into performing a mission which helps the Master Villain."
+
+[[cruel_tricks]]
+name = "Villain Accompanies Party"
+desc = "In this distressing situation, the Master Villain, in disguise or his secret identity, accompanies the heroes for much of their quest. He gets to know them, learns their strengths and weaknesses, learns their plans, and just as soon as it is most efficient for him, he thwarts their current plans and leaves. Alternatively, the Master Villain might be with the heroes all along, up to the very end; the heroes know that one of their companions is the villain, and the whole thrust of the story is finding out who he is. This is the whole purpose of most Mystery-type adventures."

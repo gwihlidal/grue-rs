@@ -1,0 +1,142 @@
+roles = [
+	"arrangers",
+	"bestowers",
+	"disbursers",
+	"disposers",
+	"harmonisers",
+	"reconcilers",
+	"regulators",
+	"reinstaters",
+	"restorers",
+]
+
+goals = [
+	"balance",
+	"congruity",
+	"correlation",
+	"correspondence",
+	"equilibrium",
+	"equipoise",
+	"equity",
+	"equivalence",
+	"parity",
+	"symmetry",
+]
+
+adjectives = [
+	"acute",
+	"apposite",
+	"apt",
+	"decisive",
+	"dependable",
+	"extreme",
+	"faithful",
+	"final",
+	"fitting",
+	"impartial",
+	"reliable",
+	"supreme",
+	"ultimate",
+	"utmost",
+]
+
+directives = [
+	"action",
+	"justice",
+	"reckoning",
+	"recompense",
+	"redress",
+	"reparation",
+	"reprisal",
+	"requital",
+	"retribution",
+	"satisfaction",
+	"vindication",
+]
+
+titles = [
+	"alliance",
+	"association",
+	"company",
+	"corporation",
+	"organisation",
+	"society",
+	"syndicate",
+]
+
+descriptives = [
+	"black",
+	"cloud",
+	"dark",
+	"dim",
+	"dusk",
+	"fog",
+	"gloom",
+	"grey",
+	"night",
+	"shade",
+	"shadow",
+	"smoke",
+	"quiet",
+	"subtle",
+	"whispering",
+	"bloody",
+	"hidden",
+	"red",
+	"ready",
+	"sharp",
+	"sudden",
+]
+
+# groups
+weapons = [
+	"blade",
+	"bolt",
+	"claw",
+	"dagger",
+	"dirk",
+	"fang",
+	"hand",
+	"knife",
+]
+
+# groups
+items = [
+	"balance",
+	"hourglass",
+	"scales",
+	"cloak",
+	"cowl",
+	"hand",
+	"hood",
+	"mantle",
+	"mask",
+]
+
+# groups
+creatures = [
+	"snake",
+	"scorpion",
+	"spider",
+	"bat",
+	"cat",
+	"daw",
+	"dog",
+	"owl",
+	"pye",
+	"rat",
+	"weasel",
+]
+
+# groups
+actions = [
+	"bring",
+	"find",
+	"hunt",
+	"kill",
+	"search",
+	"seek",
+	"shadow",
+	"slay",
+	"stalk",
+]
