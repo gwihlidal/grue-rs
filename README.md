@@ -1,4 +1,4 @@
-# grue-rs
+# grue
 Various tools and algorithms for building rpg and adventure games
 
 https://en.wikipedia.org/wiki/Grue_(monster)
