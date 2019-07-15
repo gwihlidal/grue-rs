@@ -32,7 +32,7 @@ fn main() {
 	};
 
 	for dataset in &markov_data.datasets {
-		println!("\nDataSet: {}", dataset.name);
+		println!("\nData Set: {}", dataset.name);
 
 		let values: Vec<&str> = dataset.values.iter().map(|x| x.as_ref()).collect();
 
