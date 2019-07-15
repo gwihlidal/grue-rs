@@ -1,13 +1,19 @@
 [package]
 name = "grue"
 version = "0.1.0"
-description = "Various tools and algorithms for building rpg and adventure games"
+description = "Various tools and algorithms for building role-playing and adventure games"
 authors = ["Graham Wihlidal <graham@wihlidal.ca>"]
+homepage = "https://github.com/gwihlidal/grue-rs"
 repository = "https://github.com/gwihlidal/grue-rs"
+documentation = "https://docs.rs/grue"
 readme = "README.md"
 edition = "2018"
+keywords = ["markov", "procedural", "pattern", "name", "generate"]
+categories = ["algorithms", "data-structures", "game-engines"]
+license = "MIT/Apache-2.0"
 
 [badges]
+travis-ci = { repository = "gwihlidal/grue-rs" }
 maintenance = { status = "actively-developed" }
 
 [dependencies]
