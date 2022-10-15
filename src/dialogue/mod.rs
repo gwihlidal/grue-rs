@@ -45,36 +45,36 @@ impl Node {
 	pub fn new_text(id: NodeId, label: &str, next: Option<NodeId>, text: &str) -> Node {
 		Node {
 			id,
-			label: label.to_owned(),
-			variant: NodeVariant::Text((next, text.to_owned())),
+			label: label.to_string(),
+			variant: NodeVariant::Text((next, text.to_string())),
 		}
 	}
 
 	pub fn new_choice(id: NodeId, label: &str, text: &str, choices: &[NodeId]) -> Node {
 		Node {
 			id,
-			label: label.to_owned(),
-			variant: NodeVariant::Choice((text.to_owned(), choices.to_owned())),
+			label: label.to_string(),
+			variant: NodeVariant::Choice((text.to_string(), choices.to_vec())),
 		}
 	}
 
 	pub fn new_set(id: NodeId, label: &str, next: Option<NodeId>, key: &str, val: &str) -> Node {
 		Node {
 			id,
-			label: label.to_owned(),
-			variant: NodeVariant::Set((next, key.to_owned(), val.to_owned())),
+			label: label.to_string(),
+			variant: NodeVariant::Set((next, key.to_string(), val.to_string())),
 		}
 	}
 
 	pub fn new_branch(id: NodeId, label: &str, key: &str, branches: &[(&str, NodeId)]) -> Node {
 		let mut mapping = HashMap::new();
 		for branch in branches {
-			mapping.insert(branch.0.to_owned(), branch.1);
+			mapping.insert(branch.0.to_string(), branch.1);
 		}
 		Node {
 			id,
-			label: label.to_owned(),
-			variant: NodeVariant::Branch((key.to_owned(), mapping)),
+			label: label.to_string(),
+			variant: NodeVariant::Branch((key.to_string(), mapping)),
 		}
 	}
 }
@@ -141,38 +141,35 @@ impl Dialogue {
 
 	pub fn step(&self, id: NodeId) -> Option<NodeId> {
 		match self.get_node(id) {
-			Some(ref node_ref) => {
+			Some(node_ref) => {
 				if let Some(ref events) = self.events {
 					events.on_visit(self, node_ref);
 				}
 				match node_ref.data.variant {
 					NodeVariant::Text((next, ref text)) => {
 						if let Some(ref events) = self.events {
-							events.on_text(self, node_ref.data.id, text);
+							events.on_text(self, id, text);
 						}
 						next
 					}
 					NodeVariant::Choice((ref text, ref choices)) => {
 						if let Some(ref events) = self.events {
-							events.on_choice(self, node_ref, &text, &choices)
+							events.on_choice(self, node_ref, text, choices)
 						} else {
 							None
 						}
 					}
 					NodeVariant::Set((next, ref key, ref val)) => {
 						if let Some(ref events) = self.events {
-							events.on_set(self, &key, &val);
+							events.on_set(self, key, val);
 						}
 						next
 					}
 					NodeVariant::Branch((ref key, ref branches)) => {
 						if let Some(ref events) = self.events {
-							let value = events.on_get(self, &key);
+							let value = events.on_get(self, key);
 							match value {
-								Some(value) => match branches.get(&value) {
-									Some(node_id) => Some(*node_id),
-									None => None,
-								},
+								Some(value) => branches.get(&value).copied(),
 								None => None,
 							}
 						} else {

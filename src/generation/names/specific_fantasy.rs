@@ -1,5 +1,6 @@
 use super::*;
 use rand::prelude::*;
+use serde::Deserialize;
 
 #[derive(Debug, Default, Clone, Deserialize)]
 pub struct SpecificFantasy {
@@ -45,7 +46,7 @@ impl SpecificFantasy {
 
 	pub fn caveman_male_name(&self) -> String {
 		let mut rng = thread_rng();
-		let d10 = rng.gen_range(0, 10);
+		let d10 = rng.gen_range(0..10);
 		let mut name = self.primitive.random_name();
 		if d10 > 3 {
 			name += &format!("-{}", self.primitive.random_name());
@@ -68,7 +69,7 @@ impl SpecificFantasy {
 
 	pub fn dwarf_male_name(&self) -> String {
 		let mut rng = thread_rng();
-		let d10 = rng.gen_range(0, 10);
+		let d10 = rng.gen_range(0..10);
 		let mut name = self.doughty.random_syllable();
 		if d10 > 8 {
 			if is_vowel(name.chars().last().unwrap()) {
@@ -85,7 +86,7 @@ impl SpecificFantasy {
 
 	pub fn dwarf_female_name(&self) -> String {
 		let mut rng = thread_rng();
-		let d10 = rng.gen_range(0, 10);
+		let d10 = rng.gen_range(0..10);
 		let mut name = self.doughty.random_syllable();
 		if d10 > 8 {
 			if is_vowel(name.chars().last().unwrap()) {
@@ -103,7 +104,7 @@ impl SpecificFantasy {
 
 	pub fn halfling_male_name(&self) -> String {
 		let mut rng = thread_rng();
-		let d10 = rng.gen_range(0, 10);
+		let d10 = rng.gen_range(0..10);
 		let mut name = format!(
 			"{}{}",
 			self.homely.random_syllable(),
@@ -117,7 +118,7 @@ impl SpecificFantasy {
 
 	pub fn halfling_female_name(&self) -> String {
 		let mut rng = thread_rng();
-		let d10 = rng.gen_range(0, 10);
+		let d10 = rng.gen_range(0..10);
 		let mut name = format!(
 			"{}{}",
 			self.homely.random_syllable(),
@@ -131,7 +132,7 @@ impl SpecificFantasy {
 
 	pub fn gnome_male_name(&self) -> String {
 		let mut rng = thread_rng();
-		let d10 = rng.gen_range(0, 10);
+		let d10 = rng.gen_range(0..10);
 		let mut name = self.doughty.random_syllable();
 		if is_vowel(name.chars().last().unwrap()) {
 			name.push('l');
@@ -145,7 +146,7 @@ impl SpecificFantasy {
 
 	pub fn gnome_female_name(&self) -> String {
 		let mut rng = thread_rng();
-		let d10 = rng.gen_range(0, 10);
+		let d10 = rng.gen_range(0..10);
 		let mut name = self.doughty.random_syllable();
 		if is_vowel(name.chars().last().unwrap()) {
 			name.push('l');
@@ -228,7 +229,7 @@ impl SpecificFantasy {
 	pub fn dark_elf_male_name(&self) -> String {
 		let mut rng = thread_rng();
 		let mut name = self.elegant_evil.random_dark_elf_prefix();
-		let d100 = rng.gen_range(0, 100);
+		let d100 = rng.gen_range(0..100);
 		if d100 > 17 {
 			name += &self.elegant_evil.random_middle();
 		}
@@ -239,7 +240,7 @@ impl SpecificFantasy {
 	pub fn dark_elf_female_name(&self) -> String {
 		let mut rng = thread_rng();
 		let mut name = self.elegant_evil.random_dark_elf_prefix();
-		let d100 = rng.gen_range(0, 100);
+		let d100 = rng.gen_range(0..100);
 		if d100 > 17 {
 			name += &self.elegant_evil.random_middle();
 		}
@@ -250,7 +251,7 @@ impl SpecificFantasy {
 	pub fn dark_elf_male_name_alternative(&self) -> String {
 		let mut rng = thread_rng();
 		let mut name = self.elegant_evil.random_dark_elf_prefix_alternative();
-		let d100 = rng.gen_range(0, 100);
+		let d100 = rng.gen_range(0..100);
 		if d100 > 17 {
 			name += &self.elegant_evil.random_middle();
 		}
@@ -261,7 +262,7 @@ impl SpecificFantasy {
 	pub fn dark_elf_female_name_alternative(&self) -> String {
 		let mut rng = thread_rng();
 		let mut name = self.elegant_evil.random_dark_elf_prefix_alternative();
-		let d100 = rng.gen_range(0, 100);
+		let d100 = rng.gen_range(0..100);
 		if d100 > 17 {
 			name += &self.elegant_evil.random_middle();
 		}
@@ -300,16 +301,16 @@ impl SpecificFantasy {
 			suffix = "bazia".to_string();
 		} else if suffix.ends_with("os") {
 			suffix = suffix.chars().take(suffix.len() - 2).collect();
-			suffix += &"ossa".to_string();
+			suffix += "ossa";
 		} else {
-			suffix += &"is".to_string();
+			suffix += "is";
 		}
 		format!("{}{}", name, suffix)
 	}
 
 	pub fn demon_name(&self) -> String {
 		let mut rng = thread_rng();
-		let d6 = rng.gen_range(0, 6);
+		let d6 = rng.gen_range(0..6);
 		match d6 {
 			0 => format!(
 				"{}{}",
@@ -347,7 +348,7 @@ impl SpecificFantasy {
 	pub fn angel_male_name(&self) -> String {
 		let mut name = self.empyreal.random_prefix();
 		let mut rng = thread_rng();
-		let d100 = rng.gen_range(0, 100);
+		let d100 = rng.gen_range(0..100);
 		if d100 <= 8 {
 			if !name.ends_with("ar") && !name.ends_with("al") {
 				name = format!("{}{}", self.empyreal.random_title(), name);
@@ -366,7 +367,7 @@ impl SpecificFantasy {
 	pub fn angel_female_name(&self) -> String {
 		let mut name = self.empyreal.random_prefix();
 		let mut rng = thread_rng();
-		let d100 = rng.gen_range(0, 100);
+		let d100 = rng.gen_range(0..100);
 		if d100 <= 8 {
 			if let Some(a_index) = name.rfind('a') {
 				// Replace the last 'a' by a 'e' for female

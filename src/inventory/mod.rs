@@ -51,8 +51,8 @@ impl Item {
 	) -> Item {
 		Item {
 			id: Uuid::new_v4(),
-			name: name.to_owned(),
-			desc: desc.to_owned(),
+			name: name.to_string(),
+			desc: desc.to_string(),
 			value,
 			weight,
 			rarity,
@@ -117,7 +117,7 @@ impl Inventory {
 	}
 
 	pub fn add_instance(&mut self, instance: ItemInstance) {
-		if let Some(ref _item) = self.database.items.get(&instance.item) {
+		if let Some(_item) = self.database.items.get(&instance.item) {
 			self.instances.insert(instance.id, instance);
 			//let stacking = item.limits.stacking;
 			/*let instances = self.instances_by_item(instance.item);
@@ -142,7 +142,7 @@ impl Inventory {
 		self.instances
 			.iter()
 			.fold(0, |total_weight, (_, instance)| {
-				let weight = if let Some(ref item) = self.database.items.get(&instance.item) {
+				let weight = if let Some(item) = self.database.items.get(&instance.item) {
 					item.weight
 				} else {
 					0
@@ -154,7 +154,7 @@ impl Inventory {
 
 	pub fn total_value(&self) -> u32 {
 		self.instances.iter().fold(0, |total_value, (_, instance)| {
-			let value = if let Some(ref item) = self.database.items.get(&instance.item) {
+			let value = if let Some(item) = self.database.items.get(&instance.item) {
 				item.value
 			} else {
 				0

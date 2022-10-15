@@ -1,14 +1,15 @@
 use rand::prelude::*;
+use serde::Deserialize;
 
 macro_rules! random_choice {
 	($self_:ident, $a:ident) => {
 		if $self_.$a.len() > 0 {
 			let mut rng = thread_rng();
-			let choice = rng.gen_range(0, $self_.$a.len());
+			let choice = rng.gen_range(0..$self_.$a.len());
 			$self_.$a[choice].to_owned()
 		} else {
 			String::default()
-			}
+		}
 	};
 }
 
@@ -27,6 +28,7 @@ pub struct MilitaryUnit {
 	pub lands: Vec<String>,
 }
 
+#[allow(clippy::too_many_arguments)]
 impl MilitaryUnit {
 	pub fn new(
 		patterns: &[String],
@@ -59,7 +61,7 @@ impl MilitaryUnit {
 	pub fn random_pattern(&self) -> String {
 		let mut rng = thread_rng();
 		if self.patterns.len() >= 4 {
-			let d10 = rng.gen_range(0, 10);
+			let d10 = rng.gen_range(0..10);
 			match d10 {
 				0..=1 => self.patterns[0].to_owned(),
 				2..=7 => self.patterns[1].to_owned(),
@@ -67,7 +69,7 @@ impl MilitaryUnit {
 				_ => self.patterns[3].to_owned(),
 			}
 		} else if !self.patterns.is_empty() {
-			let choice = rng.gen_range(0, self.patterns.len());
+			let choice = rng.gen_range(0..self.patterns.len());
 			self.patterns[choice].to_owned()
 		} else {
 			String::default()
@@ -76,7 +78,7 @@ impl MilitaryUnit {
 
 	pub fn random_group(&self) -> String {
 		let mut rng = thread_rng();
-		let d6 = rng.gen_range(0, 6);
+		let d6 = rng.gen_range(0..6);
 		match d6 {
 			0 => self.random_team(),
 			1 => self.random_soldier(),

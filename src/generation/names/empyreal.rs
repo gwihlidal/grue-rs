@@ -1,14 +1,15 @@
 use rand::prelude::*;
+use serde::Deserialize;
 
 macro_rules! random_choice {
 	($self_:ident, $a:ident) => {
 		if $self_.$a.len() > 0 {
 			let mut rng = thread_rng();
-			let choice = rng.gen_range(0, $self_.$a.len());
+			let choice = rng.gen_range(0..$self_.$a.len());
 			$self_.$a[choice].to_owned()
 		} else {
 			String::default()
-			}
+		}
 	};
 }
 
@@ -45,7 +46,7 @@ impl Empyreal {
 	pub fn random_title(&self) -> String {
 		if !self.titles_ar.is_empty() || !self.titles_al.is_empty() {
 			let mut rng = thread_rng();
-			let choice = rng.gen_range(0, self.titles_ar.len() + self.titles_al.len());
+			let choice = rng.gen_range(0..self.titles_ar.len() + self.titles_al.len());
 			if choice < self.titles_ar.len() {
 				self.titles_ar[choice].to_owned()
 			} else {

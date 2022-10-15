@@ -1,4 +1,5 @@
 use rand::prelude::*;
+use serde::Deserialize;
 
 #[derive(Debug, Default, Clone, Deserialize)]
 pub struct GenericFantasy {
@@ -25,7 +26,7 @@ impl GenericFantasy {
 
 	pub fn random_name(&self) -> String {
 		let mut rng = thread_rng();
-		let d20 = rng.gen_range(0, 21);
+		let d20 = rng.gen_range(0..21);
 		match d20 {
 			0..=2 => {
 				// 10%
@@ -70,27 +71,27 @@ impl GenericFantasy {
 
 	pub fn random_one_syllable(&self) -> String {
 		let mut rng = thread_rng();
-		self.one_syllable[rng.gen_range(0, self.one_syllable.len())].to_owned()
+		self.one_syllable[rng.gen_range(0..self.one_syllable.len())].to_owned()
 	}
 
 	pub fn random_two_syllables(&self) -> String {
 		let mut rng = thread_rng();
-		self.two_syllables[rng.gen_range(0, self.two_syllables.len())].to_owned()
+		self.two_syllables[rng.gen_range(0..self.two_syllables.len())].to_owned()
 	}
 
 	pub fn random_three_syllables(&self) -> String {
 		let mut rng = thread_rng();
-		self.three_syllables[rng.gen_range(0, self.three_syllables.len())].to_owned()
+		self.three_syllables[rng.gen_range(0..self.three_syllables.len())].to_owned()
 	}
 
 	pub fn random_many_syllables(&self) -> String {
 		let mut rng = thread_rng();
-		self.many_syllables[rng.gen_range(0, self.many_syllables.len())].to_owned()
+		self.many_syllables[rng.gen_range(0..self.many_syllables.len())].to_owned()
 	}
 
 	pub fn random_any_syllables(&self) -> String {
 		let mut rng = thread_rng();
-		match rng.gen_range(0, 5) {
+		match rng.gen_range(0..5) {
 			0 => self.random_one_syllable(),
 			1 => self.random_two_syllables(),
 			2 => self.random_three_syllables(),

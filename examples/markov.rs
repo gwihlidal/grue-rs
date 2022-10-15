@@ -1,5 +1,5 @@
 use grue::generation::markov::*;
-use heck::TitleCase;
+use heck::ToTitleCase;
 
 pub fn get_markov_data() -> MarkovDataGroup {
 	let defaults = include_str!("../data/markov_chain.toml");

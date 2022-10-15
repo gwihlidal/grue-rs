@@ -1,5 +1,5 @@
 use grue::generation::names::*;
-use heck::TitleCase;
+use heck::ToTitleCase;
 use regex::{Captures, Regex};
 
 pub fn load_military_unit() -> MilitaryUnit {

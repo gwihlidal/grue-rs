@@ -1,6 +1,7 @@
 use indextree::Arena;
 use indextree::NodeId;
 use rand::prelude::*;
+use serde::Deserialize;
 use std::collections::HashMap;
 
 #[derive(Debug, Default, Clone, Deserialize)]
@@ -67,14 +68,14 @@ impl MarkovNameGenerator {
 
 	pub fn build_chain(&mut self, tokens: &[&str]) {
 		for token in tokens {
-			self.add_token(&token);
+			self.add_token(token);
 		}
 	}
 
 	fn add_token(&mut self, token: &str) {
 		let mut previous_id = self.root_id;
 		let mut key = String::default();
-		for ch in token.chars().into_iter() {
+		for ch in token.chars() {
 			key.push(ch);
 			if key.len() > self.order {
 				key = key.chars().skip(1).collect();
@@ -112,14 +113,14 @@ impl MarkovNameGenerator {
 			.push(self.invalid_id);
 	}
 
-	fn add_duplicate(&mut self, token: &str, duplicates: NodeId) {
+	fn add_duplicate(&mut self, token: &str, _duplicates: NodeId) {
 		if token.len() > 1 {
 			let sub_token: String = token.chars().skip(1).collect();
-			self.add_duplicate(&sub_token, duplicates);
+			self.add_duplicate(&sub_token, _duplicates);
 		}
 
 		let mut current_node_id = self.duplicates_id;
-		for ch in token.chars().into_iter() {
+		for ch in token.chars() {
 			let previous_node_id = current_node_id;
 
 			for child_node_id in &self.arena.get(current_node_id).unwrap().data.neighbours {
@@ -137,7 +138,7 @@ impl MarkovNameGenerator {
 					.unwrap()
 					.data
 					.neighbours
-					.push(new_node_id.clone());
+					.push(*new_node_id);
 				current_node_id = *new_node_id;
 			}
 		}
@@ -146,7 +147,7 @@ impl MarkovNameGenerator {
 	fn is_duplicate(&self, token: &str) -> bool {
 		let token_lower = token.to_lowercase();
 		let mut current_node_id = self.duplicates_id;
-		for ch in token_lower.chars().into_iter() {
+		for ch in token_lower.chars() {
 			let current_node = &self.arena.get(current_node_id).unwrap().data;
 
 			let previous_node_id = current_node_id;
@@ -205,14 +206,14 @@ impl MarkovNameGenerator {
 			}
 
 			let root_node = &self.arena.get(self.root_id).unwrap().data;
-			let mut next_node_index = rng.gen_range(0, root_node.neighbours.len());
+			let mut next_node_index = rng.gen_range(0..root_node.neighbours.len());
 			let mut current_node_id = root_node.neighbours[next_node_index];
 			word.clear();
 
 			while current_node_id != self.invalid_id && word.len() <= safe_max_len {
 				let current_node = &self.arena.get(current_node_id).unwrap().data;
 				word.push(current_node.ch);
-				next_node_index = rng.gen_range(0, current_node.neighbours.len());
+				next_node_index = rng.gen_range(0..current_node.neighbours.len());
 				current_node_id = current_node.neighbours[next_node_index];
 			}
 
