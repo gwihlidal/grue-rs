@@ -17,16 +17,16 @@ travis-ci = { repository = "gwihlidal/grue-rs" }
 maintenance = { status = "actively-developed" }
 
 [dependencies]
-rand = "0.7.0"
-regex = "1.1.9"
+rand = "0.8"
+regex = "1.1"
 toml = "0.5.1"
 serde_derive = "1.0.94"
-indextree = "3.3.0"
+indextree = "3.3"
 failure = "0.1.5"
-serde = { version = "1.0.94", features = ["derive"] }
-serde_yaml = "0.8"
-uuid = { version = "0.7.4", features = ["serde", "v4"] }
-strsim = "0.9.2"
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.9"
+uuid = { version = "1.2", features = ["serde", "v4"] }
+strsim = "0.10"
 
 [dev-dependencies]
-heck = "0.3.1"
+heck = "0.4"

@@ -24,18 +24,15 @@ impl NodeEvents for Evaluator {
 		choices: &[NodeId],
 	) -> Option<NodeId> {
 		println!("** {}", text);
-		for choice in 0..choices.len() {
-			let choice_node = dlg.get_node(choices[choice]).expect("invalid node index");
+		for choice in choices {
+			let choice_node = dlg.get_node(*choice).expect("invalid node index");
 			let choice_data = &choice_node.data;
-			match choice_data.variant {
-				NodeVariant::Text((_, ref text)) => {
-					println!("   {} - {}", choice, text);
-				}
-				_ => {}
+			if let NodeVariant::Text((_, ref text)) = choice_data.variant {
+				println!("   {} - {}", choice, text);
 			}
 		}
 
-		stdout().write(b"Input: ").unwrap();
+		let _ = stdout().write(b"Input: ").unwrap();
 		let _ = stdout().flush();
 
 		let mut input = String::new();
@@ -56,7 +53,9 @@ impl NodeEvents for Evaluator {
 	}
 	fn on_set(&self, _dlg: &Dialogue, key: &str, value: &str) {
 		let mut vars = self.variables.borrow_mut();
-		let var = vars.entry(key.to_string()).or_insert(value.to_string());
+		let var = vars
+			.entry(key.to_string())
+			.or_insert_with(|| value.to_string());
 		*var = value.to_string();
 		println!("[Setting '{}' to '{}']", key, *var);
 	}
@@ -115,33 +114,21 @@ fn main() {
 	dialogue.insert_node(Node::new_text(5, "Choice_G", Some(8), "Green"));
 	dialogue.insert_node(Node::new_text(6, "Choice_B", Some(9), "Blue"));
 
-	dialogue.insert_node(Node::new_set(
-		7,
-		"Set_R",
-		Some(10),
-		&"colour_choice".to_string(),
-		&"red".to_string(),
-	));
+	dialogue.insert_node(Node::new_set(7, "Set_R", Some(10), "colour_choice", "red"));
 	dialogue.insert_node(Node::new_set(
 		8,
 		"Set_G",
 		Some(10),
-		&"colour_choice".to_string(),
-		&"green".to_string(),
+		"colour_choice",
+		"green",
 	));
-	dialogue.insert_node(Node::new_set(
-		9,
-		"Set_B",
-		Some(10),
-		&"colour_choice".to_string(),
-		&"blue".to_string(),
-	));
+	dialogue.insert_node(Node::new_set(9, "Set_B", Some(10), "colour_choice", "blue"));
 
 	let colour_branches = &[("red", 11), ("green", 12), ("blue", 13)];
 	dialogue.insert_node(Node::new_branch(
 		10,
 		"Colour_Branch",
-		&"colour_choice".to_string(),
+		"colour_choice",
 		colour_branches,
 	));
 

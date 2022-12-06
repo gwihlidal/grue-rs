@@ -1,11 +1,3 @@
-extern crate indextree;
-extern crate rand;
-extern crate toml;
-#[macro_use]
-extern crate serde_derive;
-extern crate regex;
-extern crate uuid;
-
 pub mod ability;
 pub mod combat;
 pub mod dialogue;

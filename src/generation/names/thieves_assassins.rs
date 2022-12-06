@@ -1,17 +1,19 @@
 use rand::prelude::*;
+use serde::Deserialize;
 
 macro_rules! random_choice {
 	($self_:ident, $a:ident) => {
 		if $self_.$a.len() > 0 {
 			let mut rng = thread_rng();
-			let choice = rng.gen_range(0, $self_.$a.len());
+			let choice = rng.gen_range(0..$self_.$a.len());
 			$self_.$a[choice].to_owned()
 		} else {
 			String::default()
-			}
+		}
 	};
 }
 
+#[allow(clippy::too_many_arguments)]
 #[derive(Debug, Default, Clone, Deserialize)]
 pub struct ThievesAssassins {
 	pub roles: Vec<String>,
@@ -26,6 +28,7 @@ pub struct ThievesAssassins {
 	pub actions: Vec<String>,
 }
 
+#[allow(clippy::too_many_arguments)]
 impl ThievesAssassins {
 	pub fn new(
 		roles: &[String],
@@ -55,7 +58,7 @@ impl ThievesAssassins {
 
 	pub fn random_group(&self) -> String {
 		let mut rng = thread_rng();
-		let d4 = rng.gen_range(0, 4);
+		let d4 = rng.gen_range(0..4);
 		match d4 {
 			0 => self.random_weapon(),
 			1 => self.random_item(),
@@ -106,7 +109,7 @@ impl ThievesAssassins {
 
 	pub fn random_name(&self) -> String {
 		let mut rng = thread_rng();
-		let d30 = rng.gen_range(0, 30);
+		let d30 = rng.gen_range(0..30);
 		match d30 {
 			0..=5 => format!("{} of {}", self.random_role(), self.random_goal()),
 			6..=10 => format!(
